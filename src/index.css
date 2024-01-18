@@ -321,6 +321,11 @@ summary {
 Removes the default spacing and border for appropriate elements.
 */
 
+.h-64{
+  height: 16rem;
+
+}
+
 blockquote,
 dl,
 dd,

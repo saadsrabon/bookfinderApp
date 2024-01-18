@@ -22,6 +22,7 @@ const Book = ({bookData}) => {
               {
               Array(star).fill().map((_,i) => (
                 <img
+
                 key={i}
                 className="h-4 w-4"
                 src={starIcon}
