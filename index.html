@@ -9,5 +9,20 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // select elements
+      const filterBtn = document.getElementById("filterBtn");
+      const filterDropdown = document.getElementById("filterDropdown");
+      const cancelFilterBtn = document.getElementById("cancelFilterBtn");
+      // add event listener
+      filterBtn.addEventListener("click", () => {
+        filterDropdown.classList.toggle("hidden");
+      });
+
+      // cancel filter event
+      cancelFilterBtn.addEventListener("click", () => {
+        filterDropdown.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
