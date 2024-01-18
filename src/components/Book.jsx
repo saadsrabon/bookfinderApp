@@ -3,7 +3,7 @@
 import { useState } from "react";
 import starIcon from "../assets/star.svg";
 const Book = ({bookData}) => {
-    const { star,bookimg,bookName, author, price} = bookData
+    const { star,bookimg,bookName, author, price,publishYear} = bookData
     const [favourite, setFavourite] = useState(false)
   return (
     <div className="space-y-3">
@@ -15,7 +15,7 @@ const Book = ({bookData}) => {
         </div>
         {/* <!-- info --> */}
         <div className="space-y-3">
-          <h4 className="text-lg font-bold lg:text-xl">{bookName}</h4>
+          <h4 className="text-lg font-bold lg:text-xl">{bookName} ({publishYear})</h4>
           <p className="text-xs lg:text-sm">By : <span>{author}</span></p>
           <div className="flex items-center justify-between">
             <h4 className="text-lg font-bold lg:text-xl">${Number(price)}</h4>
